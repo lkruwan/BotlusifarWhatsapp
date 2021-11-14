@@ -9,6 +9,8 @@ const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
+const simpleGit = require('simple-git');
+const git = simpleGit();
 const {WAConnection, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./Lusifar/');
 const { DataTypes } = require('sequelize');
@@ -140,104 +142,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
     
     
 //new
-    
-    
- //==============[LOG UPDATE]=============
-    if (config.WORKTYPE == 'public') {
-        if (config.LANG == 'SI' || config.LANG == 'AZ') {
-            
-            await git.fetch();
-            var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-            if (commits.total === 0) {
-                await conn.sendMessage(
-                    conn.user.jid,
-                    Lang.UPDATE, MessageType.text
-                );    
-            } else {
-                var degisiklikler = Lang.NEW_UPDATE;
-                commits['all'].map(
-                    (commit) => {
-                        degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
-                    }
-                );
-                await conn.sendMessage(
-                    conn.user.jid,
-                    '```🛡️යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + degisiklikler + '```', MessageType.text
-                ); 
-            }
-        }
-        else { 
-                      
-            await git.fetch();
-            var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-            if (commits.total === 0) {
-                await conn.sendMessage(
-                    conn.user.jid,
-                    Lang.UPDATE, MessageType.text
-                );    
-            } else {
-                var degisiklikler = Lang.NEW_UPDATE;
-                commits['all'].map(
-                    (commit) => {
-                        degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
-                    }
-                );
-    
-                await conn.sendMessage(
-                    conn.user.jid,
-                    '```🛡️Type``` *.update now* ```for update.```\n\n' + degisiklikler + '```', MessageType.text
-                ); 
-            }
-        }
-    }
-    else if (config.WORKTYPE == 'private') { 
-        if (config.LANG == 'SI' || config.LANG == 'AZ') { 
-            
-            await git.fetch();
-            var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-            if (commits.total === 0) {
-                await conn.sendMessage(
-                    conn.user.jid,
-                    Lang.UPDATE, MessageType.text
-                );    
-            } else {
-                var degisiklikler = Lang.NEW_UPDATE;
-                commits['all'].map(
-                    (commit) => {
-                        degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
-                    }
-                );
-                await conn.sendMessage(
-                    conn.user.jid,
-                    '```යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + degisiklikler + '```', MessageType.text
-                ); 
-            }
-        }
-        else { 
-           
-            await git.fetch();
-            var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-            if (commits.total === 0) {
-                await conn.sendMessage(
-                    conn.user.jid,
-                    Lang.UPDATE, MessageType.text
-                );    
-            } else {
-                var degisiklikler = Lang.NEW_UPDATE;
-                commits['all'].map(
-                    (commit) => {
-                        degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
-                    }
-                );
-                await conn.sendMessage(
-                    conn.user.jid,
-                    '```Type``` *.update now* ````for update.```\n\n' + degisiklikler + '```', MessageType.text
-                ); 
-            }
-        }
-    }
-   
-    
 //end    
     conn.on('chat-update', async m => {
         if (!m.hasNewMessage) return;
