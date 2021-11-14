@@ -142,8 +142,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
  //==============[LOG UPDATE]=============
     if (config.WORKTYPE == 'public') {
         if (config.LANG == 'SI' || config.LANG == 'AZ') {
-            if (config.FULLEVA == 'true') {
-                await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+            if (config.UPDATE == 'true') {
+                await conn.sendMessage(conn.user.jid, 'Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.', MessageType.text)
             } else {
                 await conn.sendMessage(conn.user.jid, '*Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.**', MessageType.text);
             }
@@ -168,8 +168,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
             }
         }
         else { 
-            if (config.FULLEVA == 'true') {
-                await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+            if (config.UPDATE == 'true') {
+                await conn.sendMessage(conn.user.jid, 'Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.', MessageType.text)
             } else {
                 await conn.sendMessage(conn.user.jid, '*Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.', MessageType.text);
             }               
@@ -197,8 +197,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
     }
     else if (config.WORKTYPE == 'private') { 
         if (config.LANG == 'SI' || config.LANG == 'AZ') { 
-            if (config.FULLEVA == 'true') {
-                await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+            if (config.UPDATE == 'true') {
+                await conn.sendMessage(conn.user.jid, 'Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.', MessageType.text)
             } else {
                 await conn.sendMessage(conn.user.jid, '*Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*', MessageType.text);
             }
@@ -223,8 +223,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
             }
         }
         else { 
-            if (config.FULLEVA == 'true') {
-                await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+            if (config.UPDATE == 'true') {
+                await conn.sendMessage(conn.user.jid, 'Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.', MessageType.text)
             } else {
                 await conn.sendMessage(conn.user.jid, '*Lusifar Whatsapp bot! *\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.', MessageType.text);
             }
