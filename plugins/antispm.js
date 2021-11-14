@@ -1,3 +1,9 @@
+/*
+Lusifar-kavishka
+
+ussapalla  ussapalla
+
+*/
 const Asena = require('../events');
 
 const {MessageType} = require('@adiwajshing/baileys');
