@@ -21,7 +21,7 @@
             "required": true,
             "value": "en"
         },
-        "WEL_GIF": {
+        "WELCOME_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
             "value": "https://i.imgur.com/nErXUGj.mp4"
