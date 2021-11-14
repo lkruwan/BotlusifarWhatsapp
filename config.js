@@ -62,6 +62,7 @@ module.exports = {
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     MAHN: '94769370897,0' , //dont change thise , if you change this some plugins created by me might not work for others or might have error ( bcoz this is a api key ) kavishka sandaruwan
     BRANCH: 'master',
+    UPDATE: 'true',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
