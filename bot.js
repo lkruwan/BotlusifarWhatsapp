@@ -1,22 +1,8 @@
 
 /* Copyright (C) 2020 Kavishka Sandaruwan
 RECODDED BY KAVISHKA
-
-
-const os = require("os");
-const fs = require("fs");
-const path = require("path");
-const events = require("./events");
-const chalk = require('chalk');
-const config = require('./config');
-const {WAConnection, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./Lusifar/');
-const { DataTypes } = require('sequelize');
-const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
-const got = require('got');
-const axios = require('axios');
 */
-//ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
 const os = require("os");
 const fs = require("fs");
 const path = require("path");
@@ -29,19 +15,7 @@ const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
 const axios = require('axios');
-const WhatsAsenaStack = require('whatsasena-npm');
-const simpleGit = require('simple-git');
-const git = simpleGit();
-const Language = require('./language');
-const Lang = Language.getString('updater');
-const execx = require('child_process').exec;
-const Heroku = require('heroku-client');
-const crypto = require('crypto');
-const heroku = new Heroku({
-    token: config.HEROKU.API_KEY
-});
 
-let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
 
 //sasadasdsadsadssssssssssssss
@@ -167,46 +141,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
             await conn.sendMessage(conn.user.jid, "``` WORKING " + config.WORKTYPE + "```" , MessageType.text);
     });
     
-  //=====================trtrtr====================================
-    
-    
-    if (config.UPDATE == 'true') {
-    var eva_msg = await WhatsAsenaStack.eva_if(config.LANG)
-    await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, eva_msg, MessageType.text)
-}
-else {
-    var af_start = await WhatsAsenaStack.work_type(config.WORKTYPE, config.LANG)
-    await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, af_start, MessageType.text)
-}
-await git.fetch();
-var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-if (commits.total === 0) {
-    await WhatsAsenaCN.sendMessage(
-        WhatsAsenaCN.user.jid,
-        Lang.UPDATE, MessageType.text
-    );    
-} else {
-    var degisiklikler = Lang.NEW_UPDATE;
-    commits['all'].map(
-        (commit) => {
-            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
-        }
-    );
-    var up_ch = await WhatsAsenaStack.update(config.LANG)
-    await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, up_ch, MessageType.text)
-}
-})
-
-
-    
-    
-    
-    
-    
-    
-    
-    
- //=========================fdfdfsfsa======================   
+ 
     
 //new
 //end    
