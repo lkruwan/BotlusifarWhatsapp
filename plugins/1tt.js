@@ -25,7 +25,7 @@ lusifar.addCommand({pattern: 'ter', fromMe: true, dontAddCommandList: true}, (as
       ]
       
       const buttonMessage = {
-          contentText: '```'3sdd'\n\n```'4sdd'\n',
+          contentText:'22 kaviyaahaa',
           footerText: 'bkk',25
           buttons: buttons,
           headerType: 1
